@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Under Construction | Coming Soon</title>
-  <meta name="description" content="Our website and web application are currently under construction. We are working hard to bring you a great experience soon.">
-  <!-- Paste your Google Search Console meta tag right below this line -->
+  <title>Site Under Maintenance</title>
+  <meta name="description" content="Site under maintenance.">
+  <!-- Paste Google Search Console verification meta tag below this line -->
 
   <style>
     * {
@@ -27,13 +27,12 @@
       position: relative;
     }
 
-    /* Subtle Ambient Glows */
     .glow-1, .glow-2 {
       position: absolute;
       border-radius: 50%;
-      filter: blur(80px);
+      filter: blur(90px);
       z-index: 0;
-      opacity: 0.45;
+      opacity: 0.35;
     }
 
     .glow-1 {
@@ -52,44 +51,42 @@
       right: -80px;
     }
 
-    /* Main Container */
-    .container {
+    .card {
       position: relative;
       z-index: 1;
-      max-width: 560px;
+      max-width: 480px;
       width: 100%;
-      background: rgba(15, 23, 42, 0.75);
+      background: rgba(15, 23, 42, 0.78);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(148, 163, 184, 0.15);
+      border: 1px solid rgba(148, 163, 184, 0.16);
       border-radius: 24px;
-      padding: 48px 36px;
+      padding: 52px 36px;
       text-align: center;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.65);
     }
 
-    /* Professional Animated Vector Illustration */
-    .illustration {
-      width: 110px;
-      height: 110px;
-      margin: 0 auto 24px;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.25);
+    .icon-box {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 28px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.22);
       border-radius: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
+      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.12);
     }
 
     .gear-spin {
       transform-origin: 36px 36px;
-      animation: spin 10s linear infinite;
+      animation: spin 12s linear infinite;
     }
 
     .gear-spin-reverse {
       transform-origin: 68px 64px;
-      animation: spinReverse 8s linear infinite;
+      animation: spinReverse 9s linear infinite;
     }
 
     @keyframes spin {
@@ -100,29 +97,28 @@
       100% { transform: rotate(-360deg); }
     }
 
-    /* Status Pill */
-    .status-badge {
+    .status-pill {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(245, 158, 11, 0.12);
-      color: #fbbf24;
-      border: 1px solid rgba(245, 158, 11, 0.3);
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.28);
       padding: 6px 14px;
       border-radius: 999px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.9px;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .pulse-dot {
       width: 8px;
       height: 8px;
-      background: #fbbf24;
+      background: #38bdf8;
       border-radius: 50%;
-      animation: pulse 1.5s infinite;
+      animation: pulse 1.6s infinite;
     }
 
     @keyframes pulse {
@@ -131,10 +127,10 @@
     }
 
     h1 {
-      font-size: 2.15rem;
+      font-size: 2rem;
       font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 14px;
+      letter-spacing: -0.4px;
+      margin-bottom: 12px;
       background: linear-gradient(to right, #ffffff, #cbd5e1);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -143,35 +139,20 @@
     p {
       font-size: 1rem;
       color: #94a3b8;
-      line-height: 1.65;
+      line-height: 1.6;
       margin-bottom: 32px;
-    }
-
-    /* Progress Bar */
-    .progress-section {
-      text-align: left;
-      margin-bottom: 32px;
-    }
-
-    .progress-labels {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      color: #cbd5e1;
-      font-weight: 500;
-      margin-bottom: 8px;
     }
 
     .progress-track {
       width: 100%;
-      height: 8px;
+      height: 6px;
       background: rgba(30, 41, 59, 0.9);
       border-radius: 999px;
       overflow: hidden;
     }
 
     .progress-bar {
-      width: 75%;
+      width: 45%;
       height: 100%;
       background: linear-gradient(90deg, #38bdf8, #6366f1);
       border-radius: 999px;
@@ -180,32 +161,12 @@
 
     @keyframes fillBar {
       from { width: 0%; }
-      to { width: 75%; }
-    }
-
-    /* Footer */
-    .footer {
-      padding-top: 22px;
-      border-top: 1px solid rgba(148, 163, 184, 0.12);
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-
-    .footer a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-
-    .footer a:hover {
-      color: #7dd3fc;
-      text-decoration: underline;
+      to { width: 45%; }
     }
 
     @media (max-width: 480px) {
-      .container { padding: 36px 22px; }
-      h1 { font-size: 1.75rem; }
+      .card { padding: 40px 24px; }
+      h1 { font-size: 1.7rem; }
     }
   </style>
 </head>
@@ -214,16 +175,13 @@
   <div class="glow-1"></div>
   <div class="glow-2"></div>
 
-  <main class="container">
-    <!-- Custom Animated Engineering / Construction SVG Icon -->
-    <div class="illustration" aria-hidden="true">
-      <svg width="72" height="72" viewBox="0 0 96 96" fill="none" xmlns="http://w3.org">
-        <!-- Large Primary Gear -->
+  <main class="card">
+    <div class="icon-box" aria-hidden="true">
+      <svg width="64" height="64" viewBox="0 0 96 96" fill="none" xmlns="http://w3.org">
         <g class="gear-spin">
           <path d="M36 24C29.3726 24 24 29.3726 24 36C24 42.6274 29.3726 48 36 48C42.6274 48 48 42.6274 48 36C48 29.3726 42.6274 24 36 24ZM36 41C33.2386 41 31 38.7614 31 36C31 33.2386 33.2386 31 36 31C38.7614 31 41 33.2386 41 36C41 38.7614 38.7614 41 36 41Z" fill="#38BDF8"/>
           <path d="M34 17H38V22H34V17ZM34 50H38V55H34V50ZM17 34H22V38H17V34ZM50 34H55V38H50V34ZM21.15 23.98L23.98 21.15L27.51 24.69L24.69 27.51L21.15 23.98ZM44.49 47.31L47.31 44.49L50.85 48.02L48.02 50.85L44.49 47.31ZM21.15 48.02L24.69 44.49L27.51 47.31L23.98 50.85L21.15 48.02ZM44.49 24.69L48.02 21.15L50.85 23.98L47.31 27.51L44.49 24.69Z" fill="#38BDF8"/>
         </g>
-        <!-- Secondary Accent Gear -->
         <g class="gear-spin-reverse">
           <path d="M68 55C63.0294 55 59 59.0294 59 64C59 68.9706 63.0294 73 68 73C72.9706 73 77 68.9706 77 64C77 59.0294 72.9706 55 68 55ZM68 68C65.7909 68 64 66.2091 64 64C64 61.7909 65.7909 60 68 60C70.2091 60 72 61.7909 72 64C72 66.2091 70.2091 68 68 68Z" fill="#818CF8"/>
           <path d="M66.5 49H69.5V53.5H66.5V49ZM66.5 74.5H69.5V79H66.5V74.5ZM53 62.5H57.5V65.5H53V62.5ZM78.5 62.5H83V65.5H78.5V62.5ZM56.34 54.46L58.46 52.34L61.64 55.52L59.52 57.64L56.34 54.46ZM74.36 72.48L76.48 70.36L79.66 73.54L77.54 75.66L74.36 72.48ZM56.34 73.54L59.52 70.36L61.64 72.48L58.46 75.66L56.34 73.54ZM74.36 55.52L77.54 52.34L79.66 54.46L76.48 57.64L74.36 55.52Z" fill="#818CF8"/>
@@ -231,31 +189,19 @@
       </svg>
     </div>
 
-    <div class="status-badge">
+    <div class="status-pill">
       <span class="pulse-dot"></span>
-      Under Maintenance
+      Work in Progress
     </div>
 
     <h1>Site Under Construction</h1>
 
     <p>
-      We are currently building and fine-tuning our website and web application. 
-      We'll be live shortly with a brand new experience. Thank you for your patience!
+      Currently undergoing scheduled development and setup. Please check back later.
     </p>
 
-    <div class="progress-section">
-      <div class="progress-labels">
-        <span>Development Progress</span>
-        <span>75%</span>
-      </div>
-      <div class="progress-track">
-        <div class="progress-bar"></div>
-      </div>
-    </div>
-
-    <div class="footer">
-      Have a question or inquiry? Reach us at <br>
-      <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+    <div class="progress-track">
+      <div class="progress-bar"></div>
     </div>
   </main>
 
